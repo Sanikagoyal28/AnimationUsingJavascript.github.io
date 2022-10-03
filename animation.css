@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(245, 245, 216);
+  margin: 0;
+  padding: 0;
+}
+/*CLOSED ENVELOPE*/
+
+#CEnvelope {
+  position: absolute;
+  top: 7rem;
+  left: 20rem;
+}
+#closeEnvelope {
+  height: 22rem;
+  width: 27rem;
+  margin: auto;
+  position: absolute;
+}
+
+@media (max-width: 1300px) {
+  #closeEnvelope {
+    height: 22rem;
+    width: 22rm;
+  }
+}
