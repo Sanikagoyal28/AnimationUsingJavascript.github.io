@@ -17,9 +17,25 @@ body {
   position: absolute;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 550px) {
+  #CEnvelope {
+    position: absolute;
+    top: 13rem;
+    left: 4rem;
+  }
   #closeEnvelope {
-    height: 22rem;
-    width: 22rm;
+    height: 10rem;
+    width: 12rem;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 550px) {
+  #CEnvelope {
+    top: 20rem;
+    left: 10rem;
+  }
+  #closeEnvelope {
+    height: 23rem;
+    width: 25rem;
   }
 }
