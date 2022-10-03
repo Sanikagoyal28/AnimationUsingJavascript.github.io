@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=EB+Garamond&family=Silkscreen&display=swap");
 body {
   background-color: rgb(245, 245, 216);
   margin: 0;
@@ -17,6 +18,25 @@ body {
   position: absolute;
 }
 
+#call {
+  padding: 0.6rem 1rem;
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  font-family: cursive;
+  border-radius: 30%;
+  background-color: rgb(180, 33, 33);
+  color: black;
+  font-weight: 550;
+  position: absolute;
+  top: 55vh;
+  left: 20vw;
+  box-shadow: 10px 10px 5px rgb(161, 64, 64);
+}
+#call a {
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 550px) {
   #CEnvelope {
     position: absolute;
@@ -26,6 +46,9 @@ body {
   #closeEnvelope {
     height: 10rem;
     width: 12rem;
+  }
+  #call {
+    top: 25vh;
   }
 }
 
@@ -38,4 +61,48 @@ body {
     height: 23rem;
     width: 25rem;
   }
+  #call {
+    top: 33vh;
+  }
+}
+#mailHead {
+  font-size: 70px;
+  font-family: "Comforter Brush", cursive;
+  text-align: center;
+}
+
+/*OPEN ENVELOPE*/
+#OEnvelope {
+  position: absolute;
+  top: 4rem;
+  left: 27rem;
+}
+#openEnvelope {
+  height: 24rem;
+  width: 26rem;
+  position: absolute;
+  top: 1.2rem;
+  opacity: 0;
+}
+
+#letter {
+  display: block;
+  background-color: rgb(240, 232, 196);
+  width: 23rem;
+  height: 12rem;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  box-shadow: 1.5rem 1.5rem 3rem rgb(228, 226, 148);
+  visibility: hidden;
+}
+#letter h3 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+#letter p {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 1.2rem;
 }

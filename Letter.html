@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="animation.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="OEnvelope">
+      <img id="openEnvelope" src="openEnvelope.png" />
+      <div id="letter">
+        <h3>Wishing you a Bright Diwali</h3>
+        <p>May you be blessed with success, prosperity and happiness.</p>
+      </div>
+    </section>
+
+    <script>
+      let OEnvelope = document.querySelector("#openEnvelope");
+      const open = document.querySelector("#letter");
+
+      function letterDisplay() {
+        open.style.visibility = "visible";
+      }
+
+      function letterMove() {
+        let position = 0;
+        let move = setInterval(animate, 1000 / 30);
+        function animate() {
+          if (position == 180) clearInterval(move);
+          else position = position + 1;
+          open.style.top = position + "px";
+        }
+      }
+      function EnvelopeDisplay() {
+        OEnvelope.style.opacity = "0.6";
+      }
+      setTimeout("EnvelopeDisplay()", 1000);
+      setTimeout("letterDisplay()", 1500);
+      setTimeout("letterMove()", 2000);
+    </script>
+  </body>
+</html>

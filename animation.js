@@ -37,4 +37,31 @@ function responsiveCloseLetter() {
 }
 
 MyFunction1(responsive);
-responsive.addEventListener(MyFunction1);
+
+/*BUTTON WORK*/
+
+let button = document.getElementById("call");
+
+button.addEventListener("mouseover", function () {
+  button.style.transform = "scale(1.1)";
+});
+
+button.addEventListener("mouseout", function () {
+  button.style.transform = "scale(1)";
+});
+
+const text = document.querySelector("#mailHead");
+const strText = text.textContent;
+text.textContent = "";
+const string = strText.split("");
+for (let i = 0; i < strText.length; i++) console.log(string[i]);
+
+let animateText = setInterval(textFunction, 500);
+let char = 0;
+function textFunction() {
+  if (char == strText.length) clearInterval(animateText);
+  else {
+    text.textContent += string[char];
+    char = char + 1;
+  }
+}
