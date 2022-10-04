@@ -7,36 +7,121 @@ body {
 /*CLOSED ENVELOPE*/
 
 #CEnvelope {
+  background-color: aqua;
   position: absolute;
-  top: 7rem;
-  left: 20rem;
+  top: 10rem;
+  left: 22rem;
 }
 #closeEnvelope {
-  height: 22rem;
-  width: 27rem;
+  height: 27rem;
+  width: 30rem;
   margin: auto;
   position: absolute;
 }
 
+/*BUTTON*/
+
 #call {
   padding: 0.6rem 1rem;
-  width: 10rem;
-  height: 3.5rem;
-  font-size: 1.2rem;
+  width: 11rem;
+  height: 4rem;
+  font-size: 1.7rem;
   font-family: cursive;
   border-radius: 30%;
   background-color: rgb(180, 33, 33);
   color: black;
   font-weight: 550;
   position: absolute;
-  top: 55vh;
-  left: 20vw;
-  box-shadow: 10px 10px 5px rgb(161, 64, 64);
+  /*top: 80%;
+  left: 45%;*/
+  top: 30rem;
+  left: 25rem;
+  box-shadow: 1rem 1rem 0.5rem rgb(161, 64, 64);
 }
 #call a {
   text-decoration: none;
   color: black;
 }
+/*HEADING*/
+
+#mailHead {
+  font-size: 4.7rem;
+  font-family: "Silkscreen", cursive;
+  text-align: center;
+}
+/* #caption {
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  /* visibility: hidden; 
+} */
+
+/*OPEN ENVELOPE*/
+
+#openEnvelope {
+  height: 30rem;
+  width: 33rem;
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  opacity: 0;
+}
+
+/*LETTER*/
+
+#letter {
+  display: block;
+  background-color: rgb(240, 232, 196);
+  width: 30rem;
+  height: 16rem;
+  position: absolute;
+  top: 21%;
+  left: 33.5%;
+  box-shadow: 1.5rem 1.5rem 3rem rgb(228, 226, 148);
+  visibility: hidden;
+}
+#letter h3 {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+#letter p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: 1.7rem;
+}
+#letter img {
+  position: relative;
+  left: 40%;
+}
+#letter button {
+  border: 2px dashed black;
+  border-radius: 20%;
+  background-color: bisque;
+  position: relative;
+  left: 37%;
+  top: 5%;
+  padding: 5px;
+}
+
+#letter button a {
+  text-decoration: dotted;
+  color: black;
+  font-size: 25px;
+}
+#letter button a:hover {
+  color: rgb(116, 28, 28);
+}
+
+/*INVITE CARD*/
+
 @media (max-width: 550px) {
   #CEnvelope {
     position: absolute;
@@ -49,6 +134,46 @@ body {
   }
   #call {
     top: 25vh;
+    left: 10vw;
+    height: 2.5rem;
+    width: 7rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #mailHead {
+    font-size: 2.4rem;
+    margin-left: -3%;
+  }
+  #openEnvelope {
+    height: 11rem;
+    width: 13rem;
+    top: 14rem;
+    left: 5rem;
+  }
+  #letter {
+    height: 7rem;
+    width: 12rem;
+    top: 10rem;
+    left: 5.5rem;
+  }
+  #letter h3 {
+    font-size: 1.1rem;
+  }
+  #letter p {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  #letter img {
+    display: none;
+  }
+  #letter button a {
+    font-size: 15px;
+  }
+  #letter button {
+    position: relative;
+    margin-left: -10%;
   }
 }
 
@@ -63,46 +188,37 @@ body {
   }
   #call {
     top: 33vh;
+    left: 17vw;
   }
-}
-#mailHead {
-  font-size: 70px;
-  font-family: "Comforter Brush", cursive;
-  text-align: center;
-}
-
-/*OPEN ENVELOPE*/
-#OEnvelope {
-  position: absolute;
-  top: 4rem;
-  left: 27rem;
-}
-#openEnvelope {
-  height: 24rem;
-  width: 26rem;
-  position: absolute;
-  top: 1.2rem;
-  opacity: 0;
-}
-
-#letter {
-  display: block;
-  background-color: rgb(240, 232, 196);
-  width: 23rem;
-  height: 12rem;
-  position: absolute;
-  top: 1rem;
-  left: 1.5rem;
-  box-shadow: 1.5rem 1.5rem 3rem rgb(228, 226, 148);
-  visibility: hidden;
-}
-#letter h3 {
-  text-align: center;
-  font-size: 1.8rem;
-}
-#letter p {
-  text-align: center;
-  width: 50%;
-  margin: auto;
-  font-size: 1.2rem;
+  #openEnvelope {
+    height: 20rem;
+    width: 25rem;
+    top: 20rem;
+    left: 10rem;
+  }
+  #letter {
+    height: 13rem;
+    width: 22rem;
+    top: 28rem;
+    left: 11.5rem;
+  }
+  #letter h3 {
+    font-size: 2rem;
+    margin-top: 5%;
+  }
+  #letter p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #letter img {
+    display: none;
+  }
+  #letter button a {
+    font-size: 35px;
+  }
+  #letter button {
+    position: relative;
+    margin-left: -10%;
+  }
 }

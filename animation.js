@@ -1,3 +1,42 @@
+/*BUTTON WORK*/
+
+let button = document.getElementById("call");
+
+button.addEventListener("mouseover", function () {
+  button.style.transform = "scale(1.1)";
+});
+
+button.addEventListener("mouseout", function () {
+  button.style.transform = "scale(1)";
+});
+
+/*HEADING*/
+
+const text = document.querySelector("#mailHead");
+const strText = text.textContent;
+text.textContent = "";
+const string = strText.split("");
+for (let i = 0; i < strText.length; i++) console.log(string[i]);
+
+let animateText = setInterval(textFunction, 400);
+let char = 0;
+function textFunction() {
+  if (char == strText.length) {
+    char = 0;
+    text.textContent = "";
+  } else {
+    text.textContent += string[char];
+    char = char + 1;
+  }
+}
+// const caption = document.querySelector("#caption");
+
+// function show_hide() {
+//   text.style.display = "none";
+//   button.style.display = "none";
+//   caption.style.visibility = "visible";
+// }
+
 /*WORKING OF CLOSED ENVELOPE*/
 let closeEnvelope = document.querySelector("#closeEnvelope");
 var responsive = window.matchMedia("(max-width:1000px)");
@@ -11,7 +50,7 @@ function MyFunction1(responsive) {
 }
 
 function animatedCloseLetter() {
-  let maxPosition = 300;
+  let maxPosition = 400;
   let speed = 1;
   let position = 0;
   const animation = setInterval(() => {
@@ -37,31 +76,3 @@ function responsiveCloseLetter() {
 }
 
 MyFunction1(responsive);
-
-/*BUTTON WORK*/
-
-let button = document.getElementById("call");
-
-button.addEventListener("mouseover", function () {
-  button.style.transform = "scale(1.1)";
-});
-
-button.addEventListener("mouseout", function () {
-  button.style.transform = "scale(1)";
-});
-
-const text = document.querySelector("#mailHead");
-const strText = text.textContent;
-text.textContent = "";
-const string = strText.split("");
-for (let i = 0; i < strText.length; i++) console.log(string[i]);
-
-let animateText = setInterval(textFunction, 500);
-let char = 0;
-function textFunction() {
-  if (char == strText.length) clearInterval(animateText);
-  else {
-    text.textContent += string[char];
-    char = char + 1;
-  }
-}
