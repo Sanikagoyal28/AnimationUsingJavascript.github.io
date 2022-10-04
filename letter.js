@@ -80,11 +80,35 @@ function letterDisplay() {
   open.style.visibility = "visible";
 }
 
+let responsive = window.matchMedia("(max-width:1000px)");
+
+function MyFunction2(responsive) {
+  if (responsive.matches) {
+    responsiveLetterMove();
+  } else {
+    letterMove();
+  }
+}
+
 function letterMove() {
+  let position = 120;
+  let move = setInterval(animate, 1000 / 30);
+  function animate() {
+    if (position == 270) clearInterval(move);
+    else position = position + 1;
+    open.style.top = position + "px";
+  }
+}
+
+setTimeout("EnvelopeDisplay()", 1000);
+setTimeout("letterDisplay()", 1600);
+//setTimeout("letterMove()", 2000);
+
+function responsiveLetterMove() {
   let position = 160;
   let move = setInterval(animate, 1000 / 30);
   function animate() {
-    if (position == 370) clearInterval(move);
+    if (position == 330) clearInterval(move);
     else position = position + 1;
     open.style.top = position + "px";
   }
@@ -92,6 +116,5 @@ function letterMove() {
 function EnvelopeDisplay() {
   OEnvelope.style.opacity = "0.7";
 }
-setTimeout("EnvelopeDisplay()", 1000);
-setTimeout("letterDisplay()", 1600);
-setTimeout("letterMove()", 2000);
+
+setTimeout("MyFunction2(responsive)", 2000);

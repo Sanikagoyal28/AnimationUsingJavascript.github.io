@@ -9,12 +9,12 @@ body {
 #CEnvelope {
   background-color: aqua;
   position: absolute;
-  top: 10rem;
+  top: 8rem;
   left: 22rem;
 }
 #closeEnvelope {
-  height: 27rem;
-  width: 30rem;
+  height: 23rem;
+  width: 25rem;
   margin: auto;
   position: absolute;
 }
@@ -23,19 +23,19 @@ body {
 
 #call {
   padding: 0.6rem 1rem;
-  width: 11rem;
+  width: 10rem;
   height: 4rem;
   font-size: 1.7rem;
   font-family: cursive;
   border-radius: 30%;
   background-color: rgb(180, 33, 33);
   color: black;
-  font-weight: 550;
+  font-weight: 400;
   position: absolute;
   /*top: 80%;
   left: 45%;*/
-  top: 30rem;
-  left: 25rem;
+  top: 22rem;
+  left: 16rem;
   box-shadow: 1rem 1rem 0.5rem rgb(161, 64, 64);
 }
 #call a {
@@ -45,7 +45,7 @@ body {
 /*HEADING*/
 
 #mailHead {
-  font-size: 4.7rem;
+  font-size: 4.2rem;
   font-family: "Silkscreen", cursive;
   text-align: center;
 }
@@ -62,11 +62,11 @@ body {
 /*OPEN ENVELOPE*/
 
 #openEnvelope {
-  height: 30rem;
-  width: 33rem;
+  height: 24rem;
+  width: 28rem;
   position: absolute;
   top: 20%;
-  left: 32%;
+  left: 34%;
   opacity: 0;
 }
 
@@ -75,11 +75,11 @@ body {
 #letter {
   display: block;
   background-color: rgb(240, 232, 196);
-  width: 30rem;
-  height: 16rem;
+  width: 26rem;
+  height: 14rem;
   position: absolute;
   top: 21%;
-  left: 33.5%;
+  left: 35%;
   box-shadow: 1.5rem 1.5rem 3rem rgb(228, 226, 148);
   visibility: hidden;
 }
@@ -107,7 +107,7 @@ body {
   background-color: bisque;
   position: relative;
   left: 37%;
-  top: 5%;
+  top: 2%;
   padding: 5px;
 }
 
@@ -134,7 +134,7 @@ body {
   }
   #call {
     top: 25vh;
-    left: 10vw;
+    left: 15vw;
     height: 2.5rem;
     width: 7rem;
     font-size: 1rem;
@@ -147,15 +147,15 @@ body {
   }
   #openEnvelope {
     height: 11rem;
-    width: 13rem;
-    top: 14rem;
+    width: 14rem;
+    top: 17rem;
     left: 5rem;
   }
   #letter {
     height: 7rem;
     width: 12rem;
     top: 10rem;
-    left: 5.5rem;
+    left: 6rem;
   }
   #letter h3 {
     font-size: 1.1rem;
@@ -169,11 +169,14 @@ body {
     display: none;
   }
   #letter button a {
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 900;
   }
   #letter button {
     position: relative;
-    margin-left: -10%;
+    margin-left: -9%;
+    width: 5.5rem;
+    height: 1.7rem;
   }
 }
 
@@ -188,19 +191,19 @@ body {
   }
   #call {
     top: 33vh;
-    left: 17vw;
+    left: 20vw;
   }
   #openEnvelope {
     height: 20rem;
     width: 25rem;
     top: 20rem;
-    left: 10rem;
+    left: 12rem;
   }
   #letter {
     height: 13rem;
     width: 22rem;
-    top: 28rem;
-    left: 11.5rem;
+    top: 25rem;
+    left: 13.5rem;
   }
   #letter h3 {
     font-size: 2rem;
