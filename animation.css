@@ -225,3 +225,17 @@ body {
     margin-left: -10%;
   }
 }
+/*BALLOON*/
+#balloon1 {
+  position: absolute;
+}
+
+#balloon2 {
+  position: absolute;
+}
+#balloon3 {
+  position: absolute;
+  height: 240px;
+  width: 260px;
+  margin-top: -5%;
+}
