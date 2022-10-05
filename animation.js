@@ -29,13 +29,6 @@ function textFunction() {
     char = char + 1;
   }
 }
-// const caption = document.querySelector("#caption");
-
-// function show_hide() {
-//   text.style.display = "none";
-//   button.style.display = "none";
-//   caption.style.visibility = "visible";
-// }
 
 /*WORKING OF CLOSED ENVELOPE*/
 let closeEnvelope = document.querySelector("#closeEnvelope");

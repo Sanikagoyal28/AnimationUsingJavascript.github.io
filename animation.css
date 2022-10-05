@@ -32,8 +32,6 @@ body {
   color: black;
   font-weight: 400;
   position: absolute;
-  /*top: 80%;
-  left: 45%;*/
   top: 22rem;
   left: 16rem;
   box-shadow: 1rem 1rem 0.5rem rgb(161, 64, 64);
@@ -49,15 +47,6 @@ body {
   font-family: "Silkscreen", cursive;
   text-align: center;
 }
-/* #caption {
-  font-size: 3rem;
-  font-family: "EB Garamond", serif;
-  width: 100%;
-  position: absolute;
-  top: 60%;
-  left: 30%;
-  /* visibility: hidden; 
-} */
 
 /*OPEN ENVELOPE*/
 
@@ -236,13 +225,16 @@ body {
 }
 #balloon3 {
   position: absolute;
-  height: 18rem;
-  width: 17rem;
-  margin-top: -2%;
+  top: 3%;
+  height: 16rem;
+  width: 15rem;
 }
 
 /*CONTENT*/
 
+#mainBlock {
+  visibility: hidden;
+}
 #head {
   display: block;
   color: #4c0033;
@@ -292,6 +284,7 @@ body {
   left: 35%;
   z-index: 3;
 }
+
 #block1 img {
   width: 40%;
   position: relative;
@@ -300,16 +293,16 @@ body {
 }
 #block1 h2 {
   margin-top: 0;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   width: 200%;
   position: relative;
   right: 35%;
   top: 7%;
-  font-family: "EB Garamond", serif;
+  font-family: "Comforter Brush", cursive;
   color: #ff1e1e;
 }
 #block1 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 150%;
   text-align: center;
   position: relative;
@@ -330,7 +323,9 @@ body {
   left: 63%;
   z-index: 4;
 }
-
+#canvasImg {
+  display: none;
+}
 @media (max-width: 1200px) and (min-width: 750px) {
   #block1 {
     height: fit-content;

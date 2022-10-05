@@ -100,8 +100,8 @@ function letterMove() {
   }
 }
 
-setTimeout("EnvelopeDisplay()", 1000);
-setTimeout("letterDisplay()", 1600);
+setTimeout("EnvelopeDisplay()", 500);
+setTimeout("letterDisplay()", 1200);
 //setTimeout("letterMove()", 2000);
 
 function responsiveLetterMove() {
@@ -117,4 +117,4 @@ function EnvelopeDisplay() {
   OEnvelope.style.opacity = "0.7";
 }
 
-setTimeout("MyFunction2(responsive)", 2000);
+setTimeout("MyFunction2(responsive)", 1800);
