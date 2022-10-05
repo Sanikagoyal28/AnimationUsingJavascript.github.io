@@ -102,7 +102,6 @@ function letterMove() {
 
 setTimeout("EnvelopeDisplay()", 500);
 setTimeout("letterDisplay()", 1200);
-//setTimeout("letterMove()", 2000);
 
 function responsiveLetterMove() {
   let position = 160;

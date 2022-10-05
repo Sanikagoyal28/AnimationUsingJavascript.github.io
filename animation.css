@@ -222,6 +222,7 @@ body {
 
 #balloon2 {
   position: absolute;
+  left: 80%;
 }
 #balloon3 {
   position: absolute;
@@ -409,4 +410,16 @@ body {
     top: 40%;
     left: 31%;
   }
+}
+#rocket {
+  position: absolute;
+  /* top: 70%; */
+  height: 12rem;
+  width: 15rem;
+}
+#rocket2 {
+  position: absolute;
+  height: 9rem;
+  width: 8rem;
+  transform: rotate(-15deg);
 }
