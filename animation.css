@@ -235,7 +235,85 @@ body {
 }
 #balloon3 {
   position: absolute;
-  height: 240px;
-  width: 260px;
-  margin-top: -5%;
+  height: 18rem;
+  width: 17rem;
+  margin-top: -2%;
+}
+#head {
+  display: block;
+  color: #4c0033;
+  background: linear-gradient(to bottom, #b93160, #d75281);
+  border: 2 px solid white;
+  border-radius: 60%;
+  width: 8%;
+  height: 40%;
+  padding: 0 6%;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 2;
+}
+#head h1 {
+  font-size: 2.2rem;
+  width: 130%;
+  margin-left: -7%;
+  transform: skewY(-20deg);
+}
+
+#block2 {
+  display: block;
+  background: linear-gradient(to top, #5c5454, #19111f, #151515);
+  border: 2 px solid white;
+  border-radius: 50%;
+  width: 3%;
+  padding: 6%;
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  z-index: 1;
+}
+
+#block1 {
+  display: block;
+  background-color: #080808;
+  border: 2 px solid white;
+  border-radius: 50%;
+  width: 15%;
+  height: 70%;
+  padding: 0 10%;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  z-index: 3;
+}
+#block1 img {
+  width: 40%;
+  position: relative;
+  left: 24%;
+  top: 5%;
+}
+#block1 h2 {
+  margin-top: 0;
+  font-size: 3.5rem;
+  width: 200%;
+  position: relative;
+  right: 35%;
+  top: 7%;
+  font-family: "EB Garamond", serif;
+  color: #ff1e1e;
+}
+#block1 h3 {
+  font-size: 2rem;
+  width: 150%;
+  text-align: center;
+  position: relative;
+  right: 22%;
+  color: #e9d3c1;
+}
+#sparkle {
+  width: 7%;
+  position: absolute;
+  top: 29%;
+  left: 63%;
+  z-index: 4;
 }
