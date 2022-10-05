@@ -120,8 +120,6 @@ body {
   color: rgb(116, 28, 28);
 }
 
-/*INVITE CARD*/
-
 @media (max-width: 550px) {
   #CEnvelope {
     position: absolute;
@@ -225,6 +223,9 @@ body {
     margin-left: -10%;
   }
 }
+
+/*INVITE CARD*/
+
 /*BALLOON*/
 #balloon1 {
   position: absolute;
@@ -239,6 +240,9 @@ body {
   width: 17rem;
   margin-top: -2%;
 }
+
+/*CONTENT*/
+
 #head {
   display: block;
   color: #4c0033;
@@ -272,7 +276,9 @@ body {
   left: 35%;
   z-index: 1;
 }
-
+#block2 p {
+  opacity: 0;
+}
 #block1 {
   display: block;
   background-color: #080808;
@@ -302,7 +308,7 @@ body {
   font-family: "EB Garamond", serif;
   color: #ff1e1e;
 }
-#block1 h3 {
+#block1 p {
   font-size: 2rem;
   width: 150%;
   text-align: center;
@@ -310,10 +316,102 @@ body {
   right: 22%;
   color: #e9d3c1;
 }
+#block1 h3 {
+  color: rgb(209, 209, 22);
+  font-size: 2rem;
+  width: 200%;
+  position: relative;
+  right: 37%;
+}
 #sparkle {
   width: 7%;
   position: absolute;
   top: 29%;
   left: 63%;
   z-index: 4;
+}
+
+@media (max-width: 1200px) and (min-width: 750px) {
+  #block1 {
+    height: fit-content;
+    width: 15%;
+  }
+  #block1 h2 {
+    font-size: 2rem;
+    width: 300%;
+    right: 40%;
+  }
+  #block1 p {
+    font-size: 1rem;
+    width: 150%;
+    right: 25%;
+  }
+  #block1 h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    top: 20%;
+    right: 50%;
+  }
+  #head {
+    height: fit-content;
+    width: 6%;
+    top: 14%;
+  }
+  #head h1 {
+    font-size: 1.5rem;
+    right: 20%;
+  }
+  #sparkle {
+    width: 5%;
+    margin-top: -4%;
+    margin-left: 4%;
+  }
+  #block2 {
+    padding: 3%;
+    top: 34%;
+    left: 33%;
+  }
+}
+
+@media (max-width: 750px) {
+  #head {
+    padding: 0 6% 1% 4%;
+    height: fit-content;
+    top: 17%;
+  }
+  #head h1 {
+    font-size: 1rem;
+    line-height: 0.9;
+    margin-top: 70%;
+  }
+  #block1 {
+    width: 25%;
+    height: fit-content;
+  }
+  #block1 h2 {
+    font-size: 1.5rem;
+    width: fit-content;
+    right: 10%;
+  }
+  #block1 p {
+    font-size: 0.8rem;
+    width: 110%;
+    right: 10%;
+  }
+  #block1 h3 {
+    font-size: 1rem;
+    text-align: center;
+    right: 23%;
+    width: 140%;
+  }
+  #sparkle {
+    left: 72%;
+    top: 25%;
+  }
+  #block2 {
+    padding: 4%;
+    width: 10%;
+    top: 40%;
+    left: 31%;
+  }
 }
